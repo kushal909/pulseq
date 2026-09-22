@@ -1,6 +1,6 @@
 const r = require("express").Router();
 
-const c = require("../controllers/hospitalcontroller");
+const c = require("../controllers/hospitalController");
 
 const {
   protect,
