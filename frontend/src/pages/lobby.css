@@ -1,0 +1,312 @@
+.lobby-tv {
+  min-height: 100vh;
+  padding: 30px;
+  background: #f5f7fb;
+}
+
+
+/* ===============================
+   HEADER
+================================ */
+
+.lobby-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 25px 30px;
+  margin-bottom: 25px;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  border: 1px solid #e5e7eb;
+}
+
+.lobby-brand {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.lobby-dot {
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+}
+
+.lobby-header h1 {
+  margin: 8px 0 0;
+
+  font-size: 30px;
+}
+
+
+/* ===============================
+   LIVE
+================================ */
+
+.live-status {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 10px 16px;
+
+  border-radius: 20px;
+
+  font-weight: 700;
+
+  background: #ecfdf5;
+
+  color: #047857;
+}
+
+.live-dot {
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: #10b981;
+}
+
+
+/* ===============================
+   TABLE HEADER
+================================ */
+
+.queue-header {
+  display: grid;
+
+  grid-template-columns:
+    240px
+    1fr
+    300px;
+
+  padding: 15px 25px;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.06em;
+}
+
+
+/* ===============================
+   DOCTOR ROW
+================================ */
+
+.doctor-rows {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.doctor-row {
+  display: grid;
+
+  grid-template-columns:
+    240px
+    1fr
+    300px;
+
+  align-items: center;
+
+  min-height: 130px;
+
+  padding: 20px 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 16px;
+}
+
+
+/* ===============================
+   DOCTOR
+================================ */
+
+.doctor-name {
+  font-size: 22px;
+
+  font-weight: 800;
+}
+
+.doctor-specialization {
+  margin-top: 5px;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+
+/* ===============================
+   CLIENTS
+================================ */
+
+.client-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.client {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 10px 13px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 10px;
+}
+
+.client-token {
+  font-weight: 800;
+
+  color: #2563eb;
+}
+
+.client-name {
+  font-weight: 600;
+}
+
+.client-time {
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+.no-clients {
+  color: #94a3b8;
+}
+
+
+/* ===============================
+   NOW SERVING
+================================ */
+
+.serving-cell {
+  display: flex;
+
+  justify-content: flex-end;
+}
+
+.serving {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  min-width: 230px;
+
+  padding: 14px 18px;
+
+  border-radius: 14px;
+
+  background: #eff6ff;
+
+  border: 1px solid #bfdbfe;
+}
+
+.serving-token {
+  font-size: 34px;
+
+  font-weight: 900;
+
+  color: #2563eb;
+}
+
+.serving-name {
+  font-size: 17px;
+
+  font-weight: 800;
+}
+
+.serving-status {
+  margin-top: 3px;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  text-transform: capitalize;
+}
+
+.not-serving {
+  font-size: 40px;
+
+  color: #cbd5e1;
+
+  padding-right: 80px;
+}
+
+
+/* ===============================
+   EMPTY
+================================ */
+
+.empty-lobby {
+  padding: 50px;
+
+  text-align: center;
+
+  color: #64748b;
+
+  background: #ffffff;
+
+  border-radius: 16px;
+}
+
+
+/* ===============================
+   TV RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+  .queue-header {
+    grid-template-columns:
+      180px
+      1fr
+      220px;
+  }
+
+  .doctor-row {
+    grid-template-columns:
+      180px
+      1fr
+      220px;
+  }
+
+  .serving {
+    min-width: 180px;
+  }
+
+}
